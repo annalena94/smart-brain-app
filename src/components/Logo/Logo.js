@@ -1,0 +1,21 @@
+import React from 'react';
+import Tilt from 'react-parallax-tilt';
+import './Logo.css';
+import brain from './brain.png'
+
+const Logo = () => {
+	return (
+		<div className='ma4 mt0' style={{ height: '150px', width: '150px' }}>
+			<Tilt className='br2 shadow-2 tilt'>
+      			<div style={{ height: '150px', width: '150px' }} className='pa3'>
+        			<img 
+        				src={brain} 
+        				alt='logo'
+        				style={{ paddingTop: '5px' }}/>
+      			</div>
+    		</Tilt>
+		</div>
+	);
+};
+
+export default Logo;
